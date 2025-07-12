@@ -586,11 +586,13 @@ h3 {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
   color: var(--text-color);
   font-size: 1rem;
   line-height: 1.75;
 }
+
 
 a {
   color: var(--accent-cyan);
