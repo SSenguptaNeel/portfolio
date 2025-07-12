@@ -1,7 +1,7 @@
 # 🌌 Swapnaneel Sengupta | Portfolio
 
 Welcome to my personal portfolio website — a dark-themed, smooth, and minimalistic showcase of who I am, what I do, and what I love.  
-Live here 👉 [ssenguptaneel.github.io](https://ssenguptaneel.github.io)
+Live here 👉 [ssenguptaneel.github.io](https://ssenguptaneel.github.io/portfolio/index.html)
 
 ---
 
