@@ -398,6 +398,10 @@ button, .nav-links a:hover {
   --heading-blue: #50a8ff;
 }
 
+body {
+  transform: translateZ(0);
+  will-change: transform;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -406,7 +410,7 @@ button, .nav-links a:hover {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
@@ -535,7 +539,7 @@ h3 {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  --scroll-blur: 2px;
+  --scroll-blur: 1px;
   --scroll-opacity: 0.5;
 }
 
@@ -697,8 +701,8 @@ ul.skills li {
   color: var(--accent-purple);
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.05);  /* translucent white */
+/*.card {
+  background: rgba(255, 255, 255, 0.05);  
   border-radius: 1rem;
   padding: 2rem;
   margin: 2rem 0;
@@ -723,6 +727,31 @@ ul.skills li {
 .card p {
   margin-bottom: 0.5rem;
   color: var(--text-gray);
+}*/
+
+.card {
+  background: rgba(255, 255, 255, 0.05); 
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;   
+  margin: 1.5rem 0;         
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h3 {
+  font-size: 1.25rem;        
+  color: var(--accent-cyan);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;        
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
 
 .edu-logo {
