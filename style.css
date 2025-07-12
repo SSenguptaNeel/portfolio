@@ -395,6 +395,7 @@ button, .nav-links a:hover {
   --section-bg: #161b22;
   --bg-slate: #1e293b;
   --border-color: #30363d;
+  --heading-blue: #50a8ff;
 }
 
 * {
@@ -534,7 +535,7 @@ h3 {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  --scroll-blur: 4px;
+  --scroll-blur: 2px;
   --scroll-opacity: 0.5;
 }
 
@@ -547,23 +548,29 @@ h3 {
   height: 100%;
   background: url("https://wallpapercave.com/wp/wp12345263.jpg") no-repeat center center;
   background-size: cover;
-  filter: blur(var(--scroll-blur)) brightness(0.85);
+  filter: blur(var(--scroll-blur)) brightness(0.9);
   opacity: var(--scroll-opacity);
   z-index: 0;
-  transition: filter 0.2s ease, opacity 0.2s ease;
+  transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 .with-bg .container {
   position: relative;
   z-index: 1;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
-  backdrop-filter: saturate(180%) blur(4px);
-  -webkit-backdrop-filter: saturate(180%) blur(4px);
-  color: #fff;
+  backdrop-filter: saturate(160%) blur(3px);
+  -webkit-backdrop-filter: saturate(160%) blur(3px);
+  color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .with-bg::before {
+    filter: blur(1px) brightness(0.95);
+    opacity: 0.4;
+  }
+}
 .section {
   background: var(--section-bg);
   margin: 2rem 0;
@@ -571,8 +578,11 @@ h3 {
   border-radius: 10px;
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
-  animation-delay: 0.3s;
+  animation: fadeInUp 0.6s ease-out forwards;
+  animation-delay: 0.2s;
+  will-change: transform, opacity;
+}
+
 }
 
 p {
@@ -686,16 +696,20 @@ ul.skills li {
 }
 
 .card {
-  background: var(--bg-slate);
+  background: rgba(255, 255, 255, 0.05);  /* translucent white */
   border-radius: 1rem;
   padding: 2rem;
   margin: 2rem 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
