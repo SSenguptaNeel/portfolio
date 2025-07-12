@@ -586,17 +586,12 @@ h3 {
 }
 
 p {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  color: var(--text-color);
+  margin-bottom: 1rem;
   font-size: 1rem;
-  line-height: 1.8;
+  line-height: 1.6;
+  color: var(--text-color);
 }
 
-.section p + p,
-.container p + p {
-  margin-top: 1.5rem;  /* Adds top margin only if another <p> is above */
-}
 
 
 a {
