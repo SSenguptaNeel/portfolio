@@ -465,11 +465,20 @@ body {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
+@keyframes softPulse {
+  0% { text-shadow: 0 0 8px rgba(80, 168, 255, 0.3); }
+  50% { text-shadow: 0 0 16px rgba(80, 168, 255, 0.6); }
+  100% { text-shadow: 0 0 8px rgba(80, 168, 255, 0.3); }
+}
+
+
 h1 {
   font-size: 2.5rem;
-  color: var(--accent-color);
-  text-shadow: 0 0 6px rgba(255, 46, 205, 0.3);
+  color: var(--heading-blue);  /* Use the new soft blue */
+  text-shadow: 0 0 8px rgba(80, 168, 255, 0.3); /* slight glow */
+   animation: softPulse 5s ease-in-out infinite;
 }
+
 
 h2 {
   font-size: 1.8rem;
