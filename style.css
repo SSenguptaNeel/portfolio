@@ -501,11 +501,10 @@ h3 {
 }
 
 .navbar {
-  background-color: rgba(13, 17, 23, 0.85);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border-color);
+  background: var(--section-bg);
   padding: 1rem;
   text-align: center;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .navbar ul {
@@ -513,23 +512,23 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar a {
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--accent-cyan);
   font-weight: 500;
-  transition: color 0.3s;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  background: linear-gradient(135deg, #ff2ecd, #4fd1ff);
-  color: #fff;
-  border-radius: 8px;
-  padding: 0.4rem 1rem;
-  box-shadow: 0 2px 6px rgba(255, 46, 205, 0.3);
+  color: var(--accent-color);
 }
+
 
 .with-bg {
   position: relative;
