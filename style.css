@@ -519,15 +519,16 @@ h3 {
 
 .navbar a {
   text-decoration: none;
-  color: var(--accent-cyan);
+  color: var(--accent-color);
   font-weight: 500;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: var(--accent-color);
+  color: #1f6feb; /* soft blue on hover */
 }
+
 
 
 .with-bg {
