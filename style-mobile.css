@@ -1,0 +1,90 @@
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .container {
+    padding: 1.2rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navbar li {
+    padding: 0.5rem 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+  .card {
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    padding: 1rem;
+    font-size: 0.75rem;
+  }
+
+  .contact-list li {
+    font-size: 0.95rem;
+  }
+
+  .edu-logo {
+    width: 40px;
+  }
+
+  .with-bg .container {
+    padding: 1.5rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+}
